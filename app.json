@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/listPage/index",
+    "pages/logs/logs",
+    "pages/detailPage/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#201104",
+    "navigationBarTitleText": "加 菲 乐 园",
+    "navigationBarTextStyle": "white"
+  }
+}

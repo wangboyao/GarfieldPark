@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view bindtap="viewTap" class="usermotto" style="color:{{color}};">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="bottomGrayboder toptab" data-c_e_id="wx_view_cb07a842">
+    <view bindtap="tap_d9c62767" class="toptabWrap" data-c_e_id="wx_view_c2045354">
+        <view class="active toptabItem" data-c_e_id="_other_text_221e07ff">
+            猫片
+        </view>
+        <view class="toptabItem" data-c_e_id="_other_text978931bf">
+            猫图
+        </view>
+    </view>
+</view>
+<scroll-view class="c-minheight wx-scroll-view_MBKQjG" data-c_e_id="wx_scroll_view_6d65baf2" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+  <view class='newslist' wx:for="{{list}}" wx:key="*this" wx:for-item="listItem">
+    <view bindtap="tap_de01fdb6" class="listitemWrap" data-c_e_id="wx_view687aaf2e">
+      <navigator class="image_thumbView" data-c_e_id="wx_navigatora2558f19" hover-class="navigator-hover" url="../detailPage/detail">
+        <image class="image_thumb" data-c_e_id="wx_image7450ae92" mode="aspectFit" src="{{listItem.picUrl}}"/>
+      </navigator>
+      <text class="text_description" data-c_e_id="wx_text354d27cc">{{listItem.description}}</text>
+      <view class="bottomGrayboder listitemInfoWrap" data-c_e_id="wx_view309b339d">
+                <view class="likeinfo" data-c_e_id="wx_viewcc4e89cb">
+                    <image class="likebtn" data-c_e_id="wx_imageae3c7dbf" src="http://qty83k.creatby.com/materials/origin/c5656ef00d38d89eae437c5a9102f8fa_origin.png"/>
+                    <text class="c-block likeinfo_count" data-c_e_id="wx_textdd554d41">{{listItem.readCount}}</text>
+                </view>
+                <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3">{{listItem.createTime}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
